@@ -32,5 +32,17 @@ body {
 
 .intro__title {
   font-family: 'Lobster', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-bottom: 1.5rem;
+}
+
+.intro__text-box {
+  background-color: #283e50;
+  padding: 2rem 1rem;
+}
+
+.intro__text {
+  font-size: 1.1rem;
+  line-height: 2;
 }
