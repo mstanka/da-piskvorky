@@ -27,7 +27,7 @@ body {
 .intro__image {
   display: block;
   width: 100%;
-  border-radius: 5px 5px 0 0;
+  border-radius: .5rem .5rem 0 0;
 }
 
 .intro__title {
@@ -45,4 +45,33 @@ body {
 .intro__text {
   font-size: 1.1rem;
   line-height: 2;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 4rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: background-color .5s;
+}
+
+.btn--rules {
+  background-color: #1fcca4;
+}
+
+.btn--rules:hover,
+.btn--rules:active,
+.btn--rules:focus {
+  background-color: #1cbb96;
+}
+
+.btn--start {
+  background-color: #0197f6;
+}
+
+.btn--start:hover,
+.btn--start:active,
+.btn--start:focus {
+  background-color: #0090e9;
 }
