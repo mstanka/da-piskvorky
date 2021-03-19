@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  color: #fff;
+  background: linear-gradient(to bottom, #615dad, #ffc8da);
+  min-height: 100vh;
+}
+
+.intro__card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.intro__image {
+  display: block;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.intro__title {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+}
