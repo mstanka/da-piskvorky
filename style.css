@@ -57,6 +57,28 @@ body {
   padding-left: .5rem;
 }
 
+.intro__images-box {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__images-box > figure {
+  padding-bottom: 2rem;
+}
+
+.intro__instr-image {
+  display: block;
+  width: 100%;
+}
+
+.intro__instr-text {
+  padding: .5rem 0;
+}
+
 .icon {
   width: 1em;
   height: 1em
@@ -87,6 +109,7 @@ body {
 
 .btn--start {
   background-color: #0197f6;
+  border-top: 1px solid #283e50;
 }
 
 .btn--start:hover,
