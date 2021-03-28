@@ -18,7 +18,7 @@ body {
 }
 
 .intro__card {
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
   padding: 5rem 0;
   text-align: center;
@@ -45,6 +45,25 @@ body {
 .intro__text {
   font-size: 1.1rem;
   line-height: 2;
+}
+
+.intro__list {
+  padding: 1rem 2.5rem;
+  text-align: left;
+}
+
+.intro__list > li {
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+}
+
+.icon {
+  width: 1em;
+  height: 1em
+}
+
+.icon--white {
+  filter: invert(100%);
 }
 
 .btn {
