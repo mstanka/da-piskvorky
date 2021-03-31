@@ -125,7 +125,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .intro__card {
+  .intro__card--pravidla {
     max-width: 730px;
   }
 
