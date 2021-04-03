@@ -42,6 +42,10 @@ body {
   padding: 2rem 1rem;
 }
 
+.intro__card--pravidla .intro__text-box {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
 .intro__text {
   font-size: 1.1rem;
   line-height: 2;
