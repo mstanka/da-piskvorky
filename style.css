@@ -107,6 +107,12 @@ body {
   transition: background-color 0.5s;
 }
 
+.btn-small {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
 .btn--rules {
   background-color: #1fcca4;
 }
@@ -126,6 +132,29 @@ body {
 .btn--start:active,
 .btn--start:focus {
   background-color: #0090e9;
+}
+
+.card--hra {
+  max-width: 80vmin;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.player img {
+  margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
