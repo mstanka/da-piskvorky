@@ -113,24 +113,24 @@ body {
   border-radius: 3px;
 }
 
-.btn--rules {
+.btn--first {
   background-color: #1fcca4;
 }
 
-.btn--rules:hover,
-.btn--rules:active,
-.btn--rules:focus {
+.btn--first:hover,
+.btn--first:active,
+.btn--first:focus {
   background-color: #1cbb96;
 }
 
-.btn--start {
+.btn--second {
   background-color: #0197f6;
   border-top: 1px solid #283e50;
 }
 
-.btn--start:hover,
-.btn--start:active,
-.btn--start:focus {
+.btn--second:hover,
+.btn--second:active,
+.btn--second:focus {
   background-color: #0090e9;
 }
 
