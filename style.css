@@ -17,51 +17,51 @@ body {
   min-height: 100vh;
 }
 
-.intro__card {
+.card {
   max-width: 350px;
   margin: 0 auto;
   padding: 5rem 0;
   text-align: center;
 }
 
-.intro__image {
+.image {
   display: block;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.intro__title {
+.title {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
   letter-spacing: 3px;
   padding-bottom: 1.5rem;
 }
 
-.intro__text-box {
+.text-box {
   background-color: #283e50;
   padding: 2rem 1rem;
 }
 
-.intro__card--pravidla .intro__text-box {
+.card--pravidla .text-box {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.intro__text {
+.text {
   font-size: 1.1rem;
   line-height: 2;
 }
 
-.intro__list {
+.list {
   padding: 1rem 2.5rem;
   text-align: left;
 }
 
-.intro__list > li {
+.list > li {
   padding-bottom: 1rem;
   padding-left: 0.5rem;
 }
 
-.intro__images-box {
+.images-box {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -129,11 +129,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .intro__card--pravidla {
+  .card--pravidla {
     max-width: 730px;
   }
 
-  .intro__images-box {
+  .images-box {
     flex-direction: row;
     justify-content: space-between;
   }
