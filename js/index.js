@@ -1,5 +1,6 @@
 'use strict';
 
+/// create 100x button element
 const addButtons = () => {
   for (let i = 0; i < 100; i++) {
     const buttonEl = `
