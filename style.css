@@ -136,8 +136,11 @@ body {
 
 .card--hra {
   max-width: 80vmin;
-  border: 1px solid black;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.card--hra .btn--second {
+  border-top: none;
 }
 
 .navigation {
@@ -155,6 +158,29 @@ body {
 
 .player img {
   margin-left: 0.5rem;
+}
+
+.game {
+  background: linear-gradient(to bottom, #615dad, #ffc8da);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  outline: 1px solid #283e50;
+}
+
+.game__btn {
+  height: calc(80vmin / 10);
+  width: calc(80vmin / 10);
+  background: rgba(255, 200, 218, 0.3);
+  border: 1px solid #283e50;
+  margin: 0;
+  cursor: pointer;
+}
+
+.game__btn:hover,
+.game__btn:active,
+.game__btn:focus {
+  filter: brightness(130%);
 }
 
 @media screen and (min-width: 768px) {
