@@ -189,10 +189,21 @@ body {
 
 .game__btn--circle {
   background-image: url('../img/circle.svg');
+  animation: animateIcon 0.7s;
 }
 
 .game__btn--cross {
   background-image: url('../img/cross.svg');
+  animation: animateIcon 0.7s;
+}
+
+@keyframes animateIcon {
+  from {
+    background-size: 30%;
+  }
+  to {
+    background-size: 80%;
+  }
 }
 
 @media screen and (min-width: 768px) {
