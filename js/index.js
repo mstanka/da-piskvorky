@@ -2,7 +2,9 @@
 
 const gameEl = document.querySelector('.game');
 const btnEl = document.querySelector('.game__btn');
+const fields = document.querySelectorAll('.game__btn');
 const iconEl = document.querySelector('.icon');
+const boardSize = 10; // 10x10
 let player = 'circle';
 
 // change player
@@ -20,6 +22,7 @@ const changePlayer = () => {
 const fillBtn = (btn, item) => {
   btn.classList.add(`game__btn--${item}`);
   btn.disabled = true;
+  getField(btn);
 };
 
 // listen for click
@@ -34,7 +37,7 @@ const play = () => {
   });
 };
 
-// get symbol 
+// get symbol
 const getSymbol = (btnEl) => {
   if (btnEl.classList.contains('game__btn--circle')) {
     return 'circle';
@@ -43,6 +46,24 @@ const getSymbol = (btnEl) => {
   } else {
     return undefined;
   }
+};
+
+// get field
+const getField = (row, column) => {
+  fields[row * boardSize + column];
+};
+
+//get position
+const getPosition = (field) => {
+  let fieldIndex = 0;
+  while (fieldIndex < fields.length && field !== fields[fieldIndex]) {
+    fieldIndex++;
+  }
+
+  return {
+    row: Math.floor(fieldIndex / boardSize),
+    column: fieldIndex % boardSize,
+  };
 };
 
 // start game
