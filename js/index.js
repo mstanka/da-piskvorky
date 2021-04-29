@@ -1,6 +1,7 @@
 'use strict';
 
 const gameEl = document.querySelector('.game');
+const btnEl = document.querySelector('.game__btn');
 const iconEl = document.querySelector('.icon');
 let player = 'circle';
 
@@ -31,6 +32,17 @@ const play = () => {
     }
     changePlayer();
   });
+};
+
+// get symbol 
+const getSymbol = (btnEl) => {
+  if (btnEl.classList.contains('game__btn--circle')) {
+    return 'circle';
+  } else if (btnEl.classList.contains('game__btn--cross')) {
+    return 'cross';
+  } else {
+    return undefined;
+  }
 };
 
 // start game
