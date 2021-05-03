@@ -34,8 +34,14 @@ const play = () => {
     }
 
     if (isWinningMove(e.target)) {
-      confirm(`Vyhrává ${player === 'circle' ? 'kolečko' : 'křížek'}. Spustit novou hru?`);
-      location.reload();
+      setTimeout(() => {
+        confirm(
+          `Vyhrává ${
+            player === 'circle' ? 'kolečko' : 'křížek'
+          }. Spustit novou hru?`,
+        );
+        location.reload();
+      }, 400);
     }
 
     changePlayer();
