@@ -33,18 +33,18 @@ const play = () => {
       fillBtn(e.target, 'cross');
     }
 
+    changePlayer();
+    
     if (isWinningMove(e.target)) {
       setTimeout(() => {
         confirm(
           `Vyhrává ${
-            player === 'circle' ? 'kolečko' : 'křížek'
+            player === 'circle' ? 'křížek' : 'kolečko'
           }. Spustit novou hru?`,
         );
         location.reload();
       }, 400);
     }
-
-    changePlayer();
   });
 };
 
